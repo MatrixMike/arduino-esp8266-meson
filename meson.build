@@ -1,4 +1,4 @@
-project('arduino-esp8266-meson', 'cpp', default_options: ['buildtype=minsize', 'cpp_std=c++11'])
+project('arduino-esp8266-meson', 'cpp', version: '1.0.0',default_options: ['buildtype=minsize', 'cpp_std=c++11'])
 subdir('sdk_setup')
 
 # There currently is no build type that combines -Os and -g so we specify -g heŕe exlplicitly (the debug information is required to be able to use the ESP8266 stacktrace analyser for debugging crashes)
